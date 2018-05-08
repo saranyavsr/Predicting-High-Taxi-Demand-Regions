@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>NYC taxt demand prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <script type="text/javascript" src="{{ url_for('static', filename = 'helper.js') }}"></script>
+
+</head>
+<body>
+<div class="login-page">
+    <div class="form">
+        <h1>NYC taxi demand Prediction</h1>
+        <div style="color:red;"> {{ msg }} </div>
+        <form class="login-form">
+            <input type="date" id="date">
+            <input type="text" placeholder="hour" name="hour" id="hour"/>
+            <input type="text" placeholder="lat" name="lat" id="lat"/>
+            <input type="text" placeholder="lon" name="lon" id="lon"/>
+            <input type="button" value="submit" onclick="loadDoc()" />  
+        </form>
+        <div id="demo"></div>
+    </div>
+</div>
+</body>
+</html>
